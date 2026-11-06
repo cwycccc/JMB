@@ -1,0 +1,25 @@
+# Build outputs
+*.exe
+*.log
+bin/
+tmp/
+
+# IDE
+.vscode/
+.idea/
+
+# Secrets and local runtime data
+.env
+.env.*
+*.pem
+*.key
+runtime_keys/
+secrets/
+
+# Local databases
+*.db
+*.sqlite
+
+# Operating system
+.DS_Store
+Thumbs.db
