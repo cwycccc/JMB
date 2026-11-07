@@ -9,13 +9,25 @@ import (
 	"testing"
 
 	"threshold-mldsa/backend/clearing"
+	"threshold-mldsa/backend/signer"
 	transactionstore "threshold-mldsa/backend/store"
-	"threshold-mldsa/cryptoengine"
 )
 
 func TestTransactionHTTPWorkflow(t *testing.T) {
 	store := transactionstore.New()
-	handler := NewHandler(store)
+	local, err := signer.NewLocalSigner()
+	if err != nil {
+		t.Fatal(err)
+	}
+	public := local.PublicDescriptor()
+	verifier, err := signer.NewVerifier(public, public.KeyID)
+	if err != nil {
+		t.Fatal(err)
+	}
+	handler, err := NewHandler(store, local, verifier, Options{Mode: "local"})
+	if err != nil {
+		t.Fatal(err)
+	}
 	tx := clearing.Transaction{
 		Version:       "clearing-v1",
 		TransactionID: "TX001",
@@ -78,7 +90,7 @@ func TestTransactionHTTPWorkflow(t *testing.T) {
 	if err != nil {
 		t.Fatalf("tampered signing message: %v", err)
 	}
-	if cryptoengine.VerifyMessage(tamperedMessage, signature) {
+	if verifier.Verify(signed.KeyID, tamperedMessage, signature) {
 		t.Fatal("original signature verified after transaction amount was modified")
 	}
 }

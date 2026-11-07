@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta name="description" content="跨银行清算签名监控台，真实分布式门限签名与公开协议观测。">
+<title>跨行清算 · 抗量子联合签名平台｜跨银行清算签名监控台</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+<svg class="svg-symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+<symbol id="icon-bank" viewBox="0 0 24 24"><path d="m2 9 10-6 10 6v2H2V9Zm3 3h3v7H5v-7Zm6 0h3v7h-3v-7Zm6 0h3v7h-3v-7ZM2 21h20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="icon-grid" viewBox="0 0 24 24"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+<symbol id="icon-route" viewBox="0 0 24 24"><path d="M3 7h18m-5-5 5 5-5 5M21 17H3m5-5-5 5 5 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="icon-network" viewBox="0 0 24 24"><circle cx="12" cy="5" r="3" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="5" cy="19" r="3" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="19" cy="19" r="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m11 8-5 8m7-8 5 8M8 19h8" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+<symbol id="icon-chart" viewBox="0 0 24 24"><path d="M3 3v18h19M7 16v-5m5 5V5m5 11V8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+<symbol id="icon-shield" viewBox="0 0 24 24"><path d="m12 2 8 4v6c0 5-5 8-8 10-3-2-8-5-8-10V6l8-4Zm-4 9 3 3 5-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</defs></svg>
+<aside class="sidebar">
+<a class="brand" href="#overview"><span class="brand-mark"><svg><use href="#icon-bank"></use></svg></span><span>跨行清算<small>QUANTUM CLEARING</small></span></a>
+<p class="nav-label">BANKING WORKSPACE</p><nav aria-label="控制台导航"><a class="active" href="#overview"><svg><use href="#icon-grid"></use></svg> 清算业务总览</a><a href="#transaction-editor"><svg><use href="#icon-route"></use></svg> 清算指令管理</a><a href="#protocol"><svg><use href="#icon-network"></use></svg> 签名协议与审计</a><a href="#performance"><svg><use href="#icon-chart"></use></svg> 正式性能实验</a><a href="#security"><svg><use href="#icon-shield"></use></svg> 安全风险验证</a></nav>
+<div class="sidebar-note"><span>◇</span><strong>抗量子联合签名实验环境</strong><p>3-of-5 · Threshold ML-DSA-44<br>节点独立持有自己的秘密份额<br>仅模拟清算，不执行资金划转</p><small>INDEPENDENT KEY SHARES</small></div>
+</aside>
+<main id="overview">
+<header class="topbar"><span>金融业务平台 <b>/</b> 跨行清算 <b>/</b> 联合签名控制台</span><div class="connection"><i id="connection-dot"></i><span id="connection">正在连接后端</span><button id="refresh" class="icon-button" aria-label="刷新集群与交易状态">↻</button></div></header>
+<section class="page-heading"><div><p class="eyebrow">INTERBANK CLEARING · POST-QUANTUM SECURITY</p><h1>跨银行清算与抗量子联合签名平台</h1><p class="subtitle">从清算指令到多机构联合签名与独立验签，一屏查看完整认证链路。</p></div><a class="button subtle heading-action" href="#verification"><svg><use href="#icon-shield"></use></svg> 查看认证证据</a></section>
+<div class="business-ribbon"><strong>受控实验</strong><span>本页通过业务后端调用签名服务。银行与交易均为模拟业务输入；密码认证通过，不代表真实资金已经结算。</span></div>
+<div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+<section class="clearing-hero" aria-label="当前清算指令与密码认证结果">
+<div class="hero-business">
+<div class="hero-ident"><span class="hero-kicker">CURRENT CLEARING INSTRUCTION</span><span id="current-id" class="hero-tx">尚未创建指令</span></div>
+<p class="hero-amount-label">跨行清算申请金额 · 人民币 CNY</p><div class="hero-amount"><span class="currency-mark">¥</span><strong id="clearing-amount">—</strong></div><p id="clearing-context" class="hero-context">等待创建交易 · 金额由已保存交易读取，不使用表单草稿冒充结果</p>
+<div class="bank-route"><div class="bank-mini"><span class="bank-symbol"><svg><use href="#icon-bank"></use></svg></span><div><small>付款银行 / DEBIT BANK</small><strong id="payer-bank">—</strong><span>模拟付款机构</span></div></div><div class="route-direction"><svg><use href="#icon-route"></use></svg><small>清算指令</small></div><div class="bank-mini"><span class="bank-symbol"><svg><use href="#icon-bank"></use></svg></span><div><small>收款银行 / CREDIT BANK</small><strong id="payee-bank">—</strong><span>模拟收款机构</span></div></div></div>
+</div>
+<div class="hero-auth outcome-card">
+<div class="auth-heading"><span class="hero-kicker">TRANSACTION AUTHORIZATION</span><span id="result-status" class="badge neutral">NO RESULT</span></div>
+<div class="outcome-hero"><span id="verify-symbol" class="verify-icon">◇</span><div><h2 id="outcome-title">待创建清算指令</h2><p id="verify-text">创建交易后，由后端驱动真实三轮协议</p></div></div>
+<dl class="hero-metadata"><div><dt>本次签名机构节点</dt><dd id="result-participants">—</dd></div><div><dt>密码认证状态</dt><dd><span id="transaction-status" class="badge neutral">EMPTY</span></dd></div><div><dt>签名与验签总耗时</dt><dd><span id="latest-duration">—</span> <small>ms</small></dd></div><div><dt>本次尝试次数</dt><dd id="attempts">—</dd></div></dl>
+<div class="hero-action"><button id="sign" class="button primary" disabled>发起分布式签名 →</button><p id="sign-hint" class="hint">先创建交易，再选择三个参与方。</p></div>
+<p class="hero-boundary"><strong>认证不等于结算：</strong>VERIFIED 仅代表清算指令密码认证成功；本系统不连接真实银行账户，也不执行资金划转。</p>
+</div>
+</section>
+<section class="kpis" aria-label="清算认证核心指标">
+<article><div class="kpi-label">联合签名算法 <span>01 / ALGORITHM</span></div><strong>ML-DSA-44</strong><small><span id="mode">—</span> · Threshold</small></article>
+<article class="threshold-kpi"><div class="kpi-label">门限签名结构 <span>02 / THRESHOLD</span></div><strong><span id="threshold">—</span><em> / </em><span id="total">—</span></strong><small>当前实现选择恰好三个合法节点</small></article>
+<article><div class="kpi-label">正式实验验签成功率 <span>03 / ARCHIVE</span></div><strong id="formal-rate">—</strong><small id="formal-ratio">历史实验加载中 · 非实时数据</small></article>
+<article><div class="kpi-label">历史正式实验平均耗时 <span>04 / BENCHMARK</span></div><strong><span id="formal-kpi-mean">—</span><em> ms</em></strong><small id="formal-kpi-caption">历史实验 · 与本次认证分开</small></article>
+</section>
+<div class="business-section-heading"><h2>清算业务与联合签名网络</h2><span>真实业务 API · 节点秘密份额隔离</span></div>
+<div class="control-grid">
+<section class="card transaction-card" id="transaction-editor">
+<div class="section-title"><div><p class="eyebrow">CLEARING INSTRUCTION</p><h2>01　清算指令业务信息</h2></div><span class="pill">模拟清算申请</span></div>
+<p class="card-intro">填写付款行、收款行和金额，生成待签名清算指令。认证字段将进入后端生成的规范消息。</p><form id="transaction-form"><label>交易编号<input id="transaction-id" required maxlength="80" autocomplete="off" placeholder="TX001"></label><label class="bank-field"><span><svg><use href="#icon-bank"></use></svg> 付款行机构</span><input id="from-bank" required maxlength="80" value="BankA"></label><span class="bank-arrow" aria-hidden="true">→</span><label class="bank-field"><span><svg><use href="#icon-bank"></use></svg> 收款行机构</span><input id="to-bank" required maxlength="80" value="BankB"></label><label>清算金额 / CNY<input id="amount" required inputmode="decimal" value="1000000.00" aria-describedby="amount-hint"></label><button type="submit" class="button dark" id="create">创建交易 <span>+</span></button></form>
+<p id="amount-hint" class="hint business-hint">金额最多两位小数，精确转换为整数分。浏览器不访问签名节点内部接口，不接收协调器凭据。</p>
+</section>
+<section class="card network-card">
+<div class="section-title"><div><p class="eyebrow">JOINT SIGNING NETWORK</p><h2>02　机构联合签名网络</h2></div><span class="pill" id="selection-count">3 / 3 已选择</span></div>
+<div class="cluster-health-row"><span class="cluster-public-status">公开就绪状态 <b id="ready">—</b> / 5</span><span id="cluster-note">正在获取公开健康状态</span></div><div class="network-caption"><span id="network-participants">P0 / P2 / P4 待参与</span><span>点击节点查看公开详情 · 勾选参与方</span></div>
+<div class="topology" id="topology">
+<svg class="network-wires" viewBox="0 0 1000 300" preserveAspectRatio="none" aria-hidden="true"><path data-party="0" d="M100 52 V144 L500 210"></path><path data-party="1" d="M300 52 V144 L500 210"></path><path data-party="2" d="M500 52 V210"></path><path data-party="3" d="M700 52 V144 L500 210"></path><path data-party="4" d="M900 52 V144 L500 210"></path></svg>
+<div id="nodes" class="nodes" aria-label="签名节点与参与方选择"></div>
+<div class="coordinator"><span class="coordinator-icon"><svg><use href="#icon-network"></use></svg></span><div><strong>Network Coordinator</strong><small>业务后端 · 三轮协同协议</small></div><span class="coordinator-tag">PUBLIC MESSAGES ONLY</span></div>
+</div>
+<div class="round-strip" aria-label="本次签名三轮累计响应"><div id="mini-round1"><span>ROUND 1</span><strong id="mini-count1">—</strong><small>公开承诺</small></div><span class="strip-arrow">→</span><div id="mini-round2"><span>ROUND 2</span><strong id="mini-count2">—</strong><small>消息绑定计算</small></div><span class="strip-arrow">→</span><div id="mini-round3"><span>ROUND 3</span><strong id="mini-count3">—</strong><small>签名份额响应</small></div></div>
+<div class="network-bottom"><span><i class="legend selected"></i> 已选择 / 结果参与方</span><span><i class="legend"></i> 待命</span><span id="network-scope">仅展示公开连接关系，非实时通信动画</span></div>
+</section>
+</div>
+<section class="card protocol-card" id="protocol">
+<div class="section-title"><div><p class="eyebrow">OBSERVED PROTOCOL SUMMARY</p><h2>03　门限签名协议与执行记录</h2></div><span id="protocol-state" class="badge neutral">等待签名</span></div>
+<div class="protocol-toolbar"><p class="hint">签名完成后返回的真实累计统计；不是实时轮次推送。</p><div class="replay-controls"><button id="replay" class="button subtle" disabled>▷ 历史汇总回放</button><button id="replay-stop" class="button subtle" hidden>停止回放</button></div></div><p id="replay-status" class="replay-status" role="status" hidden></p>
+<div class="round-details">
+<details id="round1" class="round"><summary><span class="round-index">01</span><div><strong>Round 1</strong><small>一次性公开承诺</small></div><b id="round1-count">—</b><span class="chevron">⌄</span></summary><dl><div><dt>HTTP 请求字节</dt><dd id="round1-sent">—</dd></div><div><dt>HTTP 响应字节</dt><dd id="round1-received">—</dd></div><div><dt>原始响应 Payload</dt><dd id="round1-payload">—</dd></div></dl><p class="hint">当前接口未提供本轮逐 Attempt 时间戳。</p></details>
+<details id="round2" class="round"><summary><span class="round-index">02</span><div><strong>Round 2</strong><small>绑定原始交易消息</small></div><b id="round2-count">—</b><span class="chevron">⌄</span></summary><dl><div><dt>HTTP 请求字节</dt><dd id="round2-sent">—</dd></div><div><dt>HTTP 响应字节</dt><dd id="round2-received">—</dd></div><div><dt>原始响应 Payload</dt><dd id="round2-payload">—</dd></div></dl><p class="hint">有序转发公开消息，不传输私有状态。</p></details>
+<details id="round3" class="round"><summary><span class="round-index">03</span><div><strong>Round 3</strong><small>节点返回签名份额响应</small></div><b id="round3-count">—</b><span class="chevron">⌄</span></summary><dl><div><dt>HTTP 请求字节</dt><dd id="round3-sent">—</dd></div><div><dt>HTTP 响应字节</dt><dd id="round3-received">—</dd></div><div><dt>原始响应 Payload</dt><dd id="round3-payload">—</dd></div></dl><p class="hint">合并后由业务后端使用公钥独立验签。</p></details>
+</div>
+<details class="attempt-history" id="attempt-history"><summary><span>签名尝试历史 <b id="attempt-summary">尚无记录</b></span><span>展开记录边界 ⌄</span></summary><div class="history-body"><div class="history-session"><span class="timeline-dot"></span><div><strong id="history-session-label">尚未创建签名会话</strong><p id="history-observation">完成签名后显示累计尝试次数和实际消息数。</p></div><span class="pill" id="history-outcome">—</span></div><p class="data-boundary" id="attempt-boundary">当前 API 未提供逐 Attempt 的事件、Combine 拒绝原因和 Abort 确认记录。因此这里不生成 Attempt 0/1/2，不从累计次数推断拒绝原因。</p></div></details>
+<div class="protocol-totals"><span>三轮 HTTP 应用流量 <strong id="http-bytes">—</strong></span><span>原始协议响应 Payload <strong id="protocol-bytes">—</strong></span><span>自动重发密码轮次 <strong>禁止</strong></span></div>
+<details class="metric-definition"><summary>查看统计口径与安全边界</summary><p>HTTP 字节是协调器连接 Read/Write 实测的请求与响应，含头部、JSON/Base64；不含 TCP/IP、重传、健康/公钥查询、状态/Abort 和浏览器 API。原始 Payload 仅计收到的密码响应，不能视为系统总网络流量。防重放与幂等限一次受控启动生命周期；节点重启后整体重新初始化。</p></details>
+</section>
+<div class="analysis-grid">
+<section class="card verification-card" id="verification">
+<div class="section-title"><div><p class="eyebrow">INDEPENDENT VERIFICATION</p><h2>04　清算指令认证证据</h2></div><span class="pill">PUBLIC KEY ONLY</span></div>
+<div class="verification-checks"><div><i id="key-check">—</i><span>返回 KeyID 与当前配置绑定</span></div><div><i id="signature-check">—</i><span>业务后端对原始规范消息独立验签</span></div><div><i id="integrity-check">—</i><span>已保存交易未因篡改测试发生变化</span></div></div>
+<dl class="result-list"><div><dt>系统 KeyID</dt><dd id="key-id">—</dd></div><div><dt>签名会话 ID</dt><dd id="session-id">—</dd></div><div><dt>签名调用</dt><dd id="signing-time">—</dd></div><div><dt>后端独立验签</dt><dd id="verification-time">—</dd></div><div><dt>签名字节数</dt><dd id="signature-size">—</dd></div><div><dt>消息 SHA-256</dt><dd id="message-hash">尚未获取原始规范字节，不在前端重建摘要</dd></div></dl>
+<details class="signature-details"><summary>查看 Base64 签名 <span>展开 ⌄</span></summary><textarea id="signature" readonly aria-label="Base64 签名" placeholder="真实签名完成后显示"></textarea><button class="button subtle" id="copy-signature" disabled>复制签名</button></details><p class="hint">零耗时读数可能来自本机计时分辨率，不代表未执行验签。</p>
+</section>
+<section class="card session-card" id="session-performance">
+<div class="section-title"><div><p class="eyebrow">THIS PAGE SESSION</p><h2>当前页面会话</h2></div><span class="pill" id="sample-count">0 次请求</span></div>
+<div class="session-metrics"><div><span>签名 API 成功率</span><strong id="success-rate">—</strong></div><div><span>会话平均耗时</span><strong id="mean">—</strong></div></div>
+<div class="chart-heading"><span>成功签名时间序列</span><span id="session-range">暂无样本</span></div><svg id="latency-chart" class="line-chart" viewBox="0 0 560 170" role="img" aria-label="当前页面成功签名延迟时间序列"></svg><p id="chart-empty" class="chart-empty">签名成功后显示真实延迟，不填充演示曲线。</p>
+<div class="session-percentiles"><span>P50 <b id="session-p50">样本不足</b></span><span>P95 <b id="p95">样本不足</b></span></div><p class="hint">不足 30 个成功样本时不展示分位数。本页数据刷新即清空，不与历史正式实验混合。</p>
+</section>
+</div>
+<section class="card formal-card" id="performance">
+<div class="section-title"><div><p class="eyebrow">FORMAL BENCHMARK / HISTORICAL ARCHIVE</p><h2>正式实验与系统性能</h2></div><div class="formal-tools"><span id="formal-badge" class="badge archive">历史实验</span><label class="button subtle file-button">加载实验 JSON<input id="experiment-file" type="file" accept=".json,application/json" aria-label="加载本地公开实验 JSON"></label></div></div>
+<p id="formal-description" class="hint">从已生成的原始实验记录加载，不代表当前运行实例的实时性能。</p>
+<div class="formal-stats"><div><span>平均耗时</span><strong id="formal-mean">—</strong><small>成功样本 · 后端签名 + 验签</small></div><div><span>P50</span><strong id="formal-p50">—</strong><small>nearest-rank 中位数</small></div><div><span>P95</span><strong id="formal-p95">—</strong><small>nearest-rank 第 95 百分位</small></div><div><span>正式实验样本</span><strong id="formal-count">—</strong><small id="formal-warmup">预热记录单独排除</small></div></div>
+<div class="formal-charts"><div><div class="chart-heading"><span>平均 / P50 / P95 对比</span><span>单位：ms</span></div><svg id="formal-bars" viewBox="0 0 520 200" role="img" aria-label="正式实验平均值P50和P95对比"></svg></div><div><div class="chart-heading"><span>原始测量序列</span><span id="formal-series-count">—</span></div><svg id="formal-series" viewBox="0 0 560 200" role="img" aria-label="正式实验全部原始成功测量值"></svg></div></div>
+<details class="formal-provenance"><summary>实验来源与运行环境 <span>展开 ⌄</span></summary><dl class="result-list"><div><dt>数据来源</dt><dd id="formal-source">—</dd></div><div><dt>实验时间</dt><dd id="formal-time">—</dd></div><div><dt>历史 KeyID</dt><dd id="formal-key">—</dd></div><div><dt>运行环境</dt><dd id="formal-environment">—</dd></div><div><dt>源文件 SHA-256</dt><dd id="formal-digest">—</dd></div></dl></details><p id="experiment-feedback" class="hint" role="status">JSON 文件只在当前浏览器本地读取，不上传到后端。</p>
+</section>
+<section class="card security-card" id="security">
+<div class="section-title"><div><p class="eyebrow">SECURITY TEST CASES</p><h2>安全异常与业务风险验证</h2></div><span class="pill">真实业务 API · 不操作节点进程</span></div>
+<div class="security-grid">
+<article class="test-case"><div class="test-case-title"><span class="test-index">01</span><h3>交易金额篡改</h3><span id="tamper-status" class="badge neutral">待执行</span></div><p>保持原签名，将候选副本的金额增加 1 分。原交易不变。</p><dl><div><dt>预期结果</dt><dd>原文 true，篡改副本 false</dd></div><div><dt>请求方法</dt><dd>POST · 验签候选交易</dd></div></dl><button id="tamper" class="button subtle" disabled>执行篡改用例</button><div id="tamper-feedback" class="test-feedback" hidden></div></article>
+<article class="test-case"><div class="test-case-title"><span class="test-index">02</span><h3>重复签名提交</h3><span id="duplicate-status" class="badge neutral">待执行</span></div><p>对已验签成功的同一交易，再提交一次签名请求。</p><dl><div><dt>预期结果</dt><dd>HTTP 409 · 拒绝重复签名</dd></div><div><dt>请求方法</dt><dd>POST · 同一交易 /sign</dd></div></dl><button id="duplicate" class="button subtle" disabled>执行重复提交用例</button><div id="duplicate-feedback" class="test-feedback" hidden></div></article>
+<article class="test-case"><div class="test-case-title"><span class="test-index">03</span><h3>参与方不足门限</h3><span id="shortage-status" class="badge neutral">待执行</span></div><p>仅在请求中选择 2 个参与方，检查签名前的入参校验。</p><dl><div><dt>预期结果</dt><dd>HTTP 400 · 拒绝启动签名</dd></div><div><dt>在线节点故障</dt><dd>属于独立的 HTTP 503 测试</dd></div></dl><button id="shortage" class="button subtle" disabled>执行 2 个参与方用例</button><div id="shortage-feedback" class="test-feedback" hidden></div></article>
+</div><p id="security-result" class="hint" role="status" aria-live="polite">签名成功后可执行用例。测试反馈保留请求、预期与实际结果，不伪造节点宕机。</p>
+</section>
+<footer><span>QUANTUM CLEARING LAB <b>·</b> Threshold ML-DSA Research Demo</span><span>模拟清算业务 · 非生产级系统 · 认证不等于资金结算</span></footer>
+</main>
+<dialog id="node-dialog" aria-labelledby="node-dialog-title"><div class="section-title"><div><p class="eyebrow">PUBLIC NODE INSPECTOR</p><h2 id="node-dialog-title">节点公开详情</h2></div><button id="node-close" class="icon-button" aria-label="关闭节点详情">×</button></div><dl id="node-details" class="result-list"></dl><p class="data-boundary">不展示秘密份额、一次性私有状态或协调器凭据。未采集的逐节点计数不会由全局计数平均分配。</p></dialog>
+</body></html>

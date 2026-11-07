@@ -1,0 +1,3936 @@
+{
+  "time_utc": "2026-11-07T03:01:30Z",
+  "os": "windows",
+  "arch": "amd64",
+  "go_version": "go1.24.0",
+  "logical_cpus": 28,
+  "key_id": "7437499a26a92e57048502e2e91f80e1e0f0f2f91eb6bffd05012c4b3e128a94",
+  "warmup_excluded": 5,
+  "requested": 100,
+  "succeeded": 100,
+  "backend_ms_successes": {
+    "Mean": 32.15471600000001,
+    "P50": 20.8526,
+    "P95": 68.0999,
+    "Min": 17.0606,
+    "Max": 120.9472
+  },
+  "end_to_end_ms_successes": {
+    "Mean": 32.41293400000001,
+    "P50": 20.8526,
+    "P95": 68.0999,
+    "Min": 17.3565,
+    "Max": 120.9472
+  },
+  "checks": {
+    "all_measured_signatures_and_tamper_checks_passed": true,
+    "all_ten_legal_combinations": true,
+    "amount_plus_one_fen_rejected": true,
+    "duplicate_sign_rejected_409": true,
+    "five_crypto_ready_processes": true,
+    "original_verified_via_public_api": true,
+    "two_participants_rejected_400": true
+  },
+  "samples": [
+    {
+      "index": 1,
+      "participants": [
+        0,
+        1,
+        2
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 17.4683,
+      "signing_ms": 17.4683,
+      "verification_ms": 0,
+      "end_to_end_ms": 17.4683,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "participants": [
+        0,
+        1,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.6446,
+      "signing_ms": 18.6446,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.6446,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "participants": [
+        0,
+        1,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.6,
+      "signing_ms": 18.6,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.6,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "participants": [
+        0,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 4,
+      "backend_ms": 68.2641,
+      "signing_ms": 68.2641,
+      "verification_ms": 0,
+      "end_to_end_ms": 68.2641,
+      "round_message_counts": [
+        12,
+        12,
+        12
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 6312,
+            "http_received_bytes": 5856,
+            "protocol_response_bytes": 384
+          },
+          {
+            "http_sent_bytes": 25836,
+            "http_received_bytes": 665040,
+            "protocol_response_bytes": 494592
+          },
+          {
+            "http_sent_bytes": 2658408,
+            "http_received_bytes": 521664,
+            "protocol_response_bytes": 387072
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "participants": [
+        0,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.141,
+      "signing_ms": 18.141,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.141,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "participants": [
+        0,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 34.6081,
+      "signing_ms": 34.6081,
+      "verification_ms": 0,
+      "end_to_end_ms": 34.6081,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "participants": [
+        1,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 5,
+      "backend_ms": 85.4564,
+      "signing_ms": 85.4564,
+      "verification_ms": 0,
+      "end_to_end_ms": 85.9702,
+      "round_message_counts": [
+        15,
+        15,
+        15
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 7890,
+            "http_received_bytes": 7320,
+            "protocol_response_bytes": 480
+          },
+          {
+            "http_sent_bytes": 32295,
+            "http_received_bytes": 831300,
+            "protocol_response_bytes": 618240
+          },
+          {
+            "http_sent_bytes": 3323010,
+            "http_received_bytes": 652080,
+            "protocol_response_bytes": 483840
+          }
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "participants": [
+        1,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 3,
+      "backend_ms": 51.1217,
+      "signing_ms": 51.1217,
+      "verification_ms": 0,
+      "end_to_end_ms": 51.1217,
+      "round_message_counts": [
+        9,
+        9,
+        9
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 4734,
+            "http_received_bytes": 4392,
+            "protocol_response_bytes": 288
+          },
+          {
+            "http_sent_bytes": 19377,
+            "http_received_bytes": 498780,
+            "protocol_response_bytes": 370944
+          },
+          {
+            "http_sent_bytes": 1993806,
+            "http_received_bytes": 391248,
+            "protocol_response_bytes": 290304
+          }
+        ]
+      }
+    },
+    {
+      "index": 9,
+      "participants": [
+        1,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 34.5469,
+      "signing_ms": 34.5469,
+      "verification_ms": 0,
+      "end_to_end_ms": 35.0573,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 10,
+      "participants": [
+        2,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.108,
+      "signing_ms": 17.599,
+      "verification_ms": 0.509,
+      "end_to_end_ms": 18.108,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 11,
+      "participants": [
+        0,
+        1,
+        2
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.6841,
+      "signing_ms": 35.6841,
+      "verification_ms": 0,
+      "end_to_end_ms": 35.6841,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 12,
+      "participants": [
+        0,
+        1,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.5777,
+      "signing_ms": 35.5777,
+      "verification_ms": 0,
+      "end_to_end_ms": 36.0892,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 13,
+      "participants": [
+        0,
+        1,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.2273,
+      "signing_ms": 18.2273,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.2273,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 14,
+      "participants": [
+        0,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.1841,
+      "signing_ms": 18.1841,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.1841,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 15,
+      "participants": [
+        0,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 4,
+      "backend_ms": 68.0999,
+      "signing_ms": 68.0999,
+      "verification_ms": 0,
+      "end_to_end_ms": 68.0999,
+      "round_message_counts": [
+        12,
+        12,
+        12
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 6312,
+            "http_received_bytes": 5856,
+            "protocol_response_bytes": 384
+          },
+          {
+            "http_sent_bytes": 25836,
+            "http_received_bytes": 665040,
+            "protocol_response_bytes": 494592
+          },
+          {
+            "http_sent_bytes": 2658408,
+            "http_received_bytes": 521664,
+            "protocol_response_bytes": 387072
+          }
+        ]
+      }
+    },
+    {
+      "index": 16,
+      "participants": [
+        0,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 17.5692,
+      "signing_ms": 17.5692,
+      "verification_ms": 0,
+      "end_to_end_ms": 17.5692,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 17,
+      "participants": [
+        1,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 17.0606,
+      "signing_ms": 17.0606,
+      "verification_ms": 0,
+      "end_to_end_ms": 17.5727,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 18,
+      "participants": [
+        1,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 17.5526,
+      "signing_ms": 17.5526,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.0633,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 19,
+      "participants": [
+        1,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 20.8526,
+      "signing_ms": 20.8526,
+      "verification_ms": 0,
+      "end_to_end_ms": 20.8526,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 20,
+      "participants": [
+        2,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.1591,
+      "signing_ms": 18.1591,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.7729,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 21,
+      "participants": [
+        0,
+        1,
+        2
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.9081,
+      "signing_ms": 35.9081,
+      "verification_ms": 0,
+      "end_to_end_ms": 35.9081,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 22,
+      "participants": [
+        0,
+        1,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 17.5979,
+      "signing_ms": 17.0836,
+      "verification_ms": 0.5143,
+      "end_to_end_ms": 18.1191,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 23,
+      "participants": [
+        0,
+        1,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.1508,
+      "signing_ms": 18.1508,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.1508,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 24,
+      "participants": [
+        0,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 3,
+      "backend_ms": 51.7767,
+      "signing_ms": 51.7767,
+      "verification_ms": 0,
+      "end_to_end_ms": 51.7767,
+      "round_message_counts": [
+        9,
+        9,
+        9
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 4734,
+            "http_received_bytes": 4392,
+            "protocol_response_bytes": 288
+          },
+          {
+            "http_sent_bytes": 19377,
+            "http_received_bytes": 498780,
+            "protocol_response_bytes": 370944
+          },
+          {
+            "http_sent_bytes": 1993806,
+            "http_received_bytes": 391248,
+            "protocol_response_bytes": 290304
+          }
+        ]
+      }
+    },
+    {
+      "index": 25,
+      "participants": [
+        0,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.15,
+      "signing_ms": 18.15,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.15,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 26,
+      "participants": [
+        0,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.1014,
+      "signing_ms": 18.1014,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.1014,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 27,
+      "participants": [
+        1,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 17.5429,
+      "signing_ms": 17.5429,
+      "verification_ms": 0,
+      "end_to_end_ms": 17.5429,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 28,
+      "participants": [
+        1,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 17.6892,
+      "signing_ms": 17.6892,
+      "verification_ms": 0,
+      "end_to_end_ms": 17.6892,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 29,
+      "participants": [
+        1,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 34.1979,
+      "signing_ms": 34.1979,
+      "verification_ms": 0,
+      "end_to_end_ms": 35.2139,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 30,
+      "participants": [
+        2,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 5,
+      "backend_ms": 86.6495,
+      "signing_ms": 86.6495,
+      "verification_ms": 0,
+      "end_to_end_ms": 86.6495,
+      "round_message_counts": [
+        15,
+        15,
+        15
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 7890,
+            "http_received_bytes": 7320,
+            "protocol_response_bytes": 480
+          },
+          {
+            "http_sent_bytes": 32295,
+            "http_received_bytes": 831300,
+            "protocol_response_bytes": 618240
+          },
+          {
+            "http_sent_bytes": 3323010,
+            "http_received_bytes": 652080,
+            "protocol_response_bytes": 483840
+          }
+        ]
+      }
+    },
+    {
+      "index": 31,
+      "participants": [
+        0,
+        1,
+        2
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 7,
+      "backend_ms": 120.9472,
+      "signing_ms": 120.9472,
+      "verification_ms": 0,
+      "end_to_end_ms": 120.9472,
+      "round_message_counts": [
+        21,
+        21,
+        21
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 11046,
+            "http_received_bytes": 10248,
+            "protocol_response_bytes": 672
+          },
+          {
+            "http_sent_bytes": 45213,
+            "http_received_bytes": 1163820,
+            "protocol_response_bytes": 865536
+          },
+          {
+            "http_sent_bytes": 4652214,
+            "http_received_bytes": 912912,
+            "protocol_response_bytes": 677376
+          }
+        ]
+      }
+    },
+    {
+      "index": 32,
+      "participants": [
+        0,
+        1,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 34.8138,
+      "signing_ms": 34.8138,
+      "verification_ms": 0,
+      "end_to_end_ms": 35.3279,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 33,
+      "participants": [
+        0,
+        1,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 3,
+      "backend_ms": 51.781,
+      "signing_ms": 51.781,
+      "verification_ms": 0,
+      "end_to_end_ms": 52.2931,
+      "round_message_counts": [
+        9,
+        9,
+        9
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 4734,
+            "http_received_bytes": 4392,
+            "protocol_response_bytes": 288
+          },
+          {
+            "http_sent_bytes": 19377,
+            "http_received_bytes": 498780,
+            "protocol_response_bytes": 370944
+          },
+          {
+            "http_sent_bytes": 1993806,
+            "http_received_bytes": 391248,
+            "protocol_response_bytes": 290304
+          }
+        ]
+      }
+    },
+    {
+      "index": 34,
+      "participants": [
+        0,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.0925,
+      "signing_ms": 17.5802,
+      "verification_ms": 0.5123,
+      "end_to_end_ms": 18.0925,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 35,
+      "participants": [
+        0,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.1721,
+      "signing_ms": 17.6582,
+      "verification_ms": 0.5139,
+      "end_to_end_ms": 18.1721,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 36,
+      "participants": [
+        0,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.2294,
+      "signing_ms": 18.2294,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.7422,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 37,
+      "participants": [
+        1,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.6703,
+      "signing_ms": 18.6703,
+      "verification_ms": 0,
+      "end_to_end_ms": 19.1838,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 38,
+      "participants": [
+        1,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.7924,
+      "signing_ms": 18.7924,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.7924,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 39,
+      "participants": [
+        1,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.1319,
+      "signing_ms": 35.1319,
+      "verification_ms": 0,
+      "end_to_end_ms": 35.1319,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 40,
+      "participants": [
+        2,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 17.3565,
+      "signing_ms": 17.3565,
+      "verification_ms": 0,
+      "end_to_end_ms": 17.3565,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 41,
+      "participants": [
+        0,
+        1,
+        2
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.1039,
+      "signing_ms": 35.1039,
+      "verification_ms": 0,
+      "end_to_end_ms": 35.1039,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 42,
+      "participants": [
+        0,
+        1,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 17.5571,
+      "signing_ms": 17.5571,
+      "verification_ms": 0,
+      "end_to_end_ms": 17.5571,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 43,
+      "participants": [
+        0,
+        1,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 17.6064,
+      "signing_ms": 17.6064,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.1168,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 44,
+      "participants": [
+        0,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.8955,
+      "signing_ms": 18.8955,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.8955,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 45,
+      "participants": [
+        0,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.1247,
+      "signing_ms": 35.1247,
+      "verification_ms": 0,
+      "end_to_end_ms": 35.6364,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 46,
+      "participants": [
+        0,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.4927,
+      "signing_ms": 18.4927,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.4927,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 47,
+      "participants": [
+        1,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 3,
+      "backend_ms": 53.4603,
+      "signing_ms": 53.4603,
+      "verification_ms": 0,
+      "end_to_end_ms": 53.9765,
+      "round_message_counts": [
+        9,
+        9,
+        9
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 4734,
+            "http_received_bytes": 4392,
+            "protocol_response_bytes": 288
+          },
+          {
+            "http_sent_bytes": 19377,
+            "http_received_bytes": 498780,
+            "protocol_response_bytes": 370944
+          },
+          {
+            "http_sent_bytes": 1993806,
+            "http_received_bytes": 391248,
+            "protocol_response_bytes": 290304
+          }
+        ]
+      }
+    },
+    {
+      "index": 48,
+      "participants": [
+        1,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.6143,
+      "signing_ms": 18.6143,
+      "verification_ms": 0,
+      "end_to_end_ms": 19.1277,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 49,
+      "participants": [
+        1,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 3,
+      "backend_ms": 53.6545,
+      "signing_ms": 53.6545,
+      "verification_ms": 0,
+      "end_to_end_ms": 54.1656,
+      "round_message_counts": [
+        9,
+        9,
+        9
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 4734,
+            "http_received_bytes": 4392,
+            "protocol_response_bytes": 288
+          },
+          {
+            "http_sent_bytes": 19377,
+            "http_received_bytes": 498780,
+            "protocol_response_bytes": 370944
+          },
+          {
+            "http_sent_bytes": 1993806,
+            "http_received_bytes": 391248,
+            "protocol_response_bytes": 290304
+          }
+        ]
+      }
+    },
+    {
+      "index": 50,
+      "participants": [
+        2,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 3,
+      "backend_ms": 54.3143,
+      "signing_ms": 54.3143,
+      "verification_ms": 0,
+      "end_to_end_ms": 54.9423,
+      "round_message_counts": [
+        9,
+        9,
+        9
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 4734,
+            "http_received_bytes": 4392,
+            "protocol_response_bytes": 288
+          },
+          {
+            "http_sent_bytes": 19377,
+            "http_received_bytes": 498780,
+            "protocol_response_bytes": 370944
+          },
+          {
+            "http_sent_bytes": 1993806,
+            "http_received_bytes": 391248,
+            "protocol_response_bytes": 290304
+          }
+        ]
+      }
+    },
+    {
+      "index": 51,
+      "participants": [
+        0,
+        1,
+        2
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.051,
+      "signing_ms": 18.051,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.051,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 52,
+      "participants": [
+        0,
+        1,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.2703,
+      "signing_ms": 35.2703,
+      "verification_ms": 0,
+      "end_to_end_ms": 35.7853,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 53,
+      "participants": [
+        0,
+        1,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.0988,
+      "signing_ms": 18.0988,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.6118,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 54,
+      "participants": [
+        0,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.5192,
+      "signing_ms": 18.5192,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.5192,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 55,
+      "participants": [
+        0,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.2861,
+      "signing_ms": 35.2861,
+      "verification_ms": 0,
+      "end_to_end_ms": 36.3088,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 56,
+      "participants": [
+        0,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 3,
+      "backend_ms": 52.9598,
+      "signing_ms": 52.9598,
+      "verification_ms": 0,
+      "end_to_end_ms": 52.9598,
+      "round_message_counts": [
+        9,
+        9,
+        9
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 4734,
+            "http_received_bytes": 4392,
+            "protocol_response_bytes": 288
+          },
+          {
+            "http_sent_bytes": 19377,
+            "http_received_bytes": 498780,
+            "protocol_response_bytes": 370944
+          },
+          {
+            "http_sent_bytes": 1993806,
+            "http_received_bytes": 391248,
+            "protocol_response_bytes": 290304
+          }
+        ]
+      }
+    },
+    {
+      "index": 57,
+      "participants": [
+        1,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 17.5513,
+      "signing_ms": 17.5513,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.0644,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 58,
+      "participants": [
+        1,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.6147,
+      "signing_ms": 35.6147,
+      "verification_ms": 0,
+      "end_to_end_ms": 36.1227,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 59,
+      "participants": [
+        1,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 3,
+      "backend_ms": 52.7205,
+      "signing_ms": 52.7205,
+      "verification_ms": 0,
+      "end_to_end_ms": 52.7205,
+      "round_message_counts": [
+        9,
+        9,
+        9
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 4734,
+            "http_received_bytes": 4392,
+            "protocol_response_bytes": 288
+          },
+          {
+            "http_sent_bytes": 19377,
+            "http_received_bytes": 498780,
+            "protocol_response_bytes": 370944
+          },
+          {
+            "http_sent_bytes": 1993806,
+            "http_received_bytes": 391248,
+            "protocol_response_bytes": 290304
+          }
+        ]
+      }
+    },
+    {
+      "index": 60,
+      "participants": [
+        2,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 36.1053,
+      "signing_ms": 36.1053,
+      "verification_ms": 0,
+      "end_to_end_ms": 36.6162,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 61,
+      "participants": [
+        0,
+        1,
+        2
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 3,
+      "backend_ms": 53.3978,
+      "signing_ms": 53.3978,
+      "verification_ms": 0,
+      "end_to_end_ms": 53.3978,
+      "round_message_counts": [
+        9,
+        9,
+        9
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 4734,
+            "http_received_bytes": 4392,
+            "protocol_response_bytes": 288
+          },
+          {
+            "http_sent_bytes": 19377,
+            "http_received_bytes": 498780,
+            "protocol_response_bytes": 370944
+          },
+          {
+            "http_sent_bytes": 1993806,
+            "http_received_bytes": 391248,
+            "protocol_response_bytes": 290304
+          }
+        ]
+      }
+    },
+    {
+      "index": 62,
+      "participants": [
+        0,
+        1,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 3,
+      "backend_ms": 53.1117,
+      "signing_ms": 53.1117,
+      "verification_ms": 0,
+      "end_to_end_ms": 53.1117,
+      "round_message_counts": [
+        9,
+        9,
+        9
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 4734,
+            "http_received_bytes": 4392,
+            "protocol_response_bytes": 288
+          },
+          {
+            "http_sent_bytes": 19377,
+            "http_received_bytes": 498780,
+            "protocol_response_bytes": 370944
+          },
+          {
+            "http_sent_bytes": 1993806,
+            "http_received_bytes": 391248,
+            "protocol_response_bytes": 290304
+          }
+        ]
+      }
+    },
+    {
+      "index": 63,
+      "participants": [
+        0,
+        1,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.8062,
+      "signing_ms": 35.8062,
+      "verification_ms": 0,
+      "end_to_end_ms": 35.8062,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 64,
+      "participants": [
+        0,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 19.0472,
+      "signing_ms": 19.0472,
+      "verification_ms": 0,
+      "end_to_end_ms": 19.5594,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 65,
+      "participants": [
+        0,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.9243,
+      "signing_ms": 35.9243,
+      "verification_ms": 0,
+      "end_to_end_ms": 36.4383,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 66,
+      "participants": [
+        0,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 4,
+      "backend_ms": 71.2809,
+      "signing_ms": 71.2809,
+      "verification_ms": 0,
+      "end_to_end_ms": 71.7935,
+      "round_message_counts": [
+        12,
+        12,
+        12
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 6312,
+            "http_received_bytes": 5856,
+            "protocol_response_bytes": 384
+          },
+          {
+            "http_sent_bytes": 25836,
+            "http_received_bytes": 665040,
+            "protocol_response_bytes": 494592
+          },
+          {
+            "http_sent_bytes": 2658408,
+            "http_received_bytes": 521664,
+            "protocol_response_bytes": 387072
+          }
+        ]
+      }
+    },
+    {
+      "index": 67,
+      "participants": [
+        1,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 37.2328,
+      "signing_ms": 37.2328,
+      "verification_ms": 0,
+      "end_to_end_ms": 37.2328,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 68,
+      "participants": [
+        1,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.1928,
+      "signing_ms": 18.1928,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.1928,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 69,
+      "participants": [
+        1,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.0186,
+      "signing_ms": 35.0186,
+      "verification_ms": 0,
+      "end_to_end_ms": 35.0186,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 70,
+      "participants": [
+        2,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.6091,
+      "signing_ms": 35.6091,
+      "verification_ms": 0,
+      "end_to_end_ms": 36.1207,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 71,
+      "participants": [
+        0,
+        1,
+        2
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.0991,
+      "signing_ms": 18.0991,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.6109,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 72,
+      "participants": [
+        0,
+        1,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.4406,
+      "signing_ms": 18.4406,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.4406,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 73,
+      "participants": [
+        0,
+        1,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 34.7818,
+      "signing_ms": 34.7818,
+      "verification_ms": 0,
+      "end_to_end_ms": 35.2969,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 74,
+      "participants": [
+        0,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.0134,
+      "signing_ms": 18.0134,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.5244,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 75,
+      "participants": [
+        0,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.1384,
+      "signing_ms": 35.1384,
+      "verification_ms": 0,
+      "end_to_end_ms": 35.6475,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 76,
+      "participants": [
+        0,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.1259,
+      "signing_ms": 18.1259,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.6433,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 77,
+      "participants": [
+        1,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 17.6336,
+      "signing_ms": 17.6336,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.1463,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 78,
+      "participants": [
+        1,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.287,
+      "signing_ms": 35.287,
+      "verification_ms": 0,
+      "end_to_end_ms": 35.287,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 79,
+      "participants": [
+        1,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.6538,
+      "signing_ms": 35.6538,
+      "verification_ms": 0,
+      "end_to_end_ms": 36.1664,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 80,
+      "participants": [
+        2,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.5211,
+      "signing_ms": 18.5211,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.5211,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 81,
+      "participants": [
+        0,
+        1,
+        2
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.6132,
+      "signing_ms": 18.6132,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.6132,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 82,
+      "participants": [
+        0,
+        1,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 34.677,
+      "signing_ms": 34.677,
+      "verification_ms": 0,
+      "end_to_end_ms": 35.1864,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 83,
+      "participants": [
+        0,
+        1,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 3,
+      "backend_ms": 54.7899,
+      "signing_ms": 54.7899,
+      "verification_ms": 0,
+      "end_to_end_ms": 54.7899,
+      "round_message_counts": [
+        9,
+        9,
+        9
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 4734,
+            "http_received_bytes": 4392,
+            "protocol_response_bytes": 288
+          },
+          {
+            "http_sent_bytes": 19377,
+            "http_received_bytes": 498780,
+            "protocol_response_bytes": 370944
+          },
+          {
+            "http_sent_bytes": 1993806,
+            "http_received_bytes": 391248,
+            "protocol_response_bytes": 290304
+          }
+        ]
+      }
+    },
+    {
+      "index": 84,
+      "participants": [
+        0,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.7851,
+      "signing_ms": 18.7851,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.7851,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 85,
+      "participants": [
+        0,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.0166,
+      "signing_ms": 35.0166,
+      "verification_ms": 0,
+      "end_to_end_ms": 35.0166,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 86,
+      "participants": [
+        0,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 17.6681,
+      "signing_ms": 17.6681,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.1778,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 87,
+      "participants": [
+        1,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 3,
+      "backend_ms": 53.837,
+      "signing_ms": 53.837,
+      "verification_ms": 0,
+      "end_to_end_ms": 54.3505,
+      "round_message_counts": [
+        9,
+        9,
+        9
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 4734,
+            "http_received_bytes": 4392,
+            "protocol_response_bytes": 288
+          },
+          {
+            "http_sent_bytes": 19377,
+            "http_received_bytes": 498780,
+            "protocol_response_bytes": 370944
+          },
+          {
+            "http_sent_bytes": 1993806,
+            "http_received_bytes": 391248,
+            "protocol_response_bytes": 290304
+          }
+        ]
+      }
+    },
+    {
+      "index": 88,
+      "participants": [
+        1,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.5252,
+      "signing_ms": 35.5252,
+      "verification_ms": 0,
+      "end_to_end_ms": 35.5252,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 89,
+      "participants": [
+        1,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 3,
+      "backend_ms": 52.4898,
+      "signing_ms": 52.4898,
+      "verification_ms": 0,
+      "end_to_end_ms": 53.0018,
+      "round_message_counts": [
+        9,
+        9,
+        9
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 4734,
+            "http_received_bytes": 4392,
+            "protocol_response_bytes": 288
+          },
+          {
+            "http_sent_bytes": 19377,
+            "http_received_bytes": 498780,
+            "protocol_response_bytes": 370944
+          },
+          {
+            "http_sent_bytes": 1993806,
+            "http_received_bytes": 391248,
+            "protocol_response_bytes": 290304
+          }
+        ]
+      }
+    },
+    {
+      "index": 90,
+      "participants": [
+        2,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.4077,
+      "signing_ms": 18.4077,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.4077,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 91,
+      "participants": [
+        0,
+        1,
+        2
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.1129,
+      "signing_ms": 18.1129,
+      "verification_ms": 0,
+      "end_to_end_ms": 19.1408,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 92,
+      "participants": [
+        0,
+        1,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 3,
+      "backend_ms": 52.9491,
+      "signing_ms": 52.9491,
+      "verification_ms": 0,
+      "end_to_end_ms": 52.9491,
+      "round_message_counts": [
+        9,
+        9,
+        9
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 4734,
+            "http_received_bytes": 4392,
+            "protocol_response_bytes": 288
+          },
+          {
+            "http_sent_bytes": 19377,
+            "http_received_bytes": 498780,
+            "protocol_response_bytes": 370944
+          },
+          {
+            "http_sent_bytes": 1993806,
+            "http_received_bytes": 391248,
+            "protocol_response_bytes": 290304
+          }
+        ]
+      }
+    },
+    {
+      "index": 93,
+      "participants": [
+        0,
+        1,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.7067,
+      "signing_ms": 35.7067,
+      "verification_ms": 0,
+      "end_to_end_ms": 35.7067,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 94,
+      "participants": [
+        0,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.0543,
+      "signing_ms": 18.0543,
+      "verification_ms": 0,
+      "end_to_end_ms": 19.0804,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 95,
+      "participants": [
+        0,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 18.5389,
+      "signing_ms": 18.5389,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.5389,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 96,
+      "participants": [
+        0,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.4604,
+      "signing_ms": 35.4604,
+      "verification_ms": 0,
+      "end_to_end_ms": 35.9708,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 97,
+      "participants": [
+        1,
+        2,
+        3
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 19.5853,
+      "signing_ms": 19.5853,
+      "verification_ms": 0,
+      "end_to_end_ms": 19.5853,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    },
+    {
+      "index": 98,
+      "participants": [
+        1,
+        2,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 35.6081,
+      "signing_ms": 35.6081,
+      "verification_ms": 0,
+      "end_to_end_ms": 36.6317,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 99,
+      "participants": [
+        1,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 2,
+      "backend_ms": 37.0177,
+      "signing_ms": 37.0177,
+      "verification_ms": 0,
+      "end_to_end_ms": 37.0177,
+      "round_message_counts": [
+        6,
+        6,
+        6
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 3156,
+            "http_received_bytes": 2928,
+            "protocol_response_bytes": 192
+          },
+          {
+            "http_sent_bytes": 12918,
+            "http_received_bytes": 332520,
+            "protocol_response_bytes": 247296
+          },
+          {
+            "http_sent_bytes": 1329204,
+            "http_received_bytes": 260832,
+            "protocol_response_bytes": 193536
+          }
+        ]
+      }
+    },
+    {
+      "index": 100,
+      "participants": [
+        2,
+        3,
+        4
+      ],
+      "http_status": 200,
+      "verified": true,
+      "attempts": 1,
+      "backend_ms": 17.634,
+      "signing_ms": 17.634,
+      "verification_ms": 0,
+      "end_to_end_ms": 18.6476,
+      "round_message_counts": [
+        3,
+        3,
+        3
+      ],
+      "traffic": {
+        "rounds": [
+          {
+            "http_sent_bytes": 1578,
+            "http_received_bytes": 1464,
+            "protocol_response_bytes": 96
+          },
+          {
+            "http_sent_bytes": 6459,
+            "http_received_bytes": 166260,
+            "protocol_response_bytes": 123648
+          },
+          {
+            "http_sent_bytes": 664602,
+            "http_received_bytes": 130416,
+            "protocol_response_bytes": 96768
+          }
+        ]
+      }
+    }
+  ]
+}
