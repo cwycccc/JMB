@@ -12,16 +12,18 @@ import (
 // PublicConfig is the non-secret system configuration shared by Parties and
 // the Coordinator. It deliberately exposes no private-key material.
 type PublicConfig struct {
-	threshold int
-	parties   int
-	params    *thmldsa44.ThresholdParams
-	publicKey *thmldsa44.PublicKey
-	setup     *setupIdentity
+	threshold   int
+	parties     int
+	params      *thmldsa44.ThresholdParams
+	publicKey   *thmldsa44.PublicKey
+	setup       *setupIdentity
+	keyID       string
+	commitments [][]byte
 }
 
 // PartyKeyShare is an in-memory hand-off object produced by TrustedKeySetup.
 // NewParty consumes it, so the same secret share cannot initialize two Party
-// objects accidentally. No serialization API is provided in this prototype.
+// objects accidentally. ExportPartyShare consumes this handle as well.
 type PartyKeyShare struct {
 	mu    sync.Mutex
 	id    int
@@ -61,13 +63,41 @@ func TrustedKeySetup(threshold, parties int) (*PublicConfig, []*PartyKeyShare, e
 	shares := make([]*PartyKeyShare, parties)
 	for id := range privateKeys {
 		key := privateKeys[id]
+		privateKeys[id] = thmldsa44.PrivateKey{}
 		shares[id] = &PartyKeyShare{
 			id:    id,
 			key:   &key,
 			setup: identity,
 		}
 	}
+	config.commitments = make([][]byte, parties)
+	for id, share := range shares {
+		packed := packThresholdShare(share.key, threshold, parties)
+		config.commitments[id] = shareCommitment(id, packed)
+		clear(packed)
+	}
+	config.keyID = configurationKeyID(threshold, parties, publicKey.Bytes(), config.commitments)
 	return config, shares, nil
+}
+
+// KeyID identifies the public key, parameters and per-Party share commitments.
+// It is public and may be supplied to a child process as an expected value.
+func (c *PublicConfig) KeyID() string     { return c.keyID }
+func (c *PublicConfig) Threshold() int    { return c.threshold }
+func (c *PublicConfig) TotalParties() int { return c.parties }
+
+// Destroy releases an undistributed share handle. It cannot revoke a share
+// already imported by another process or guarantee erasure of Go heap copies.
+func (s *PartyKeyShare) Destroy() {
+	if s == nil {
+		return
+	}
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	if s.key != nil {
+		*s.key = thmldsa44.PrivateKey{}
+		s.key = nil
+	}
 }
 
 // PartyID returns the zero-based node ID this share belongs to.
